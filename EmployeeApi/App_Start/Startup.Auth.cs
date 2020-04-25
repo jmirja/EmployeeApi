@@ -38,7 +38,7 @@ namespace EmployeeApi
                 TokenEndpointPath = new PathString("/Token"),
                 Provider = new ApplicationOAuthProvider(PublicClientId),
                 AuthorizeEndpointPath = new PathString("/api/Account/ExternalLogin"),
-                AccessTokenExpireTimeSpan = TimeSpan.FromSeconds(5),
+                AccessTokenExpireTimeSpan = TimeSpan.FromSeconds(60),
                 // In production mode set AllowInsecureHttp = false
                 AllowInsecureHttp = true
             };
